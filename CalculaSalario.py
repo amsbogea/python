@@ -1,14 +1,14 @@
-SalBruto = input("Digite o salario bruto: ")
+SalBruto = int(input("Digite o salario bruto: "))
 
-transporte = input("Digite o valor do transporte: ")
+transporte = int(input("Digite o valor do transporte: "))
 
-ticket = input("Digite o valor do ticket: ")
+ticket = int(input("Digite o valor do ticket: "))
 
 inss = (float(SalBruto * 9)/100)
 
 desTicket = (float(ticket*15)/100)
 
-desTransporte = (float(transporte*6)/100)
+desTransporte = (float(SalBruto*6)/100)
 
 descontos = (float (inss + desTransporte + desTicket))
 
