@@ -1,4 +1,9 @@
-total_segs = int(input("Por favor, entre com o numero de segundos que deseja converter: "))
+while True:
+    try:
+        total_segs = int(input("Digite o numero de segundos que deseja converter: "))
+        break
+    except ValueError:
+        print("Entrada Inválida!\n")
 
 horas = total_segs // 3600
 segs_restantes = total_segs % 3600

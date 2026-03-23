@@ -1,5 +1,17 @@
-a = 5
-b = 2
-divisao = a % b
+while True:
+    try:
+        dividendo = int(input("Digite o dividendo.\n"))
+        break
+    except ValueError:
+        print("Entrada inválida!")
 
-print ("O resto da divisao é:", divisao)
+while True:
+        try:
+            divisor = int(input("Digite do divisor.\n"))
+            break
+        except ValueError:
+            print("Entrada inválida!")
+
+resto = dividendo % divisor
+
+print ("O resto da  divisao é:", resto)

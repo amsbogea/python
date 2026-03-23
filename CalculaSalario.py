@@ -4,20 +4,20 @@ while True:
         SalBruto = float(input("Digite o salario bruto:\n>  "))
         break
     except ValueError:
-        print("Entrada Inválida!n\Digite o salário bruto:\n> ") 
+        print("Entrada Inválida!") 
            
 while True:
     try:
         transporte = float(input("Digite o valor do transporte: "))
         break
     except ValueError:
-        print("Entrada Inválida!\nDigite o valor do ticket:\n> ")
+        print("Entrada Inválida!")
 while True:
     try:
         ticket = float(input("Digite o valor do ticket: "))
         break
     except ValueError:
-        print("Entrada inválida!\nDigite o valor do Ticket:\n> ")
+        print("Entrada inválida!")
 
 #processamento
 inss = (float(SalBruto * 9)/100)
