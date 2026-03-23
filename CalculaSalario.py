@@ -1,9 +1,25 @@
-SalBruto = int(input("Digite o salario bruto: "))
+#Entrada de dados do usuario
+while True:
+    try:
+        SalBruto = float(input("Digite o salario bruto:\n>  "))
+        break
+    except ValueError:
+        print("Entrada Inválida!n\Digite o salário bruto:\n> ") 
+           
+while True:
+    try:
+        transporte = float(input("Digite o valor do transporte: "))
+        break
+    except ValueError:
+        print("Entrada Inválida!\nDigite o valor do ticket:\n> ")
+while True:
+    try:
+        ticket = float(input("Digite o valor do ticket: "))
+        break
+    except ValueError:
+        print("Entrada inválida!\nDigite o valor do Ticket:\n> ")
 
-transporte = int(input("Digite o valor do transporte: "))
-
-ticket = int(input("Digite o valor do ticket: "))
-
+#processamento
 inss = (float(SalBruto * 9)/100)
 
 desTicket = (float(ticket*15)/100)
@@ -14,10 +30,13 @@ descontos = (float (inss + desTransporte + desTicket))
 
 SalLiquido = (float (SalBruto - descontos))
 
-print ("O desconto do ticket é R$", desTicket)
+#saida na tela do terminal
+print ("\n\n> O desconto do ticket é R$", desTicket)
 
-print ("O desconto do transporte é R$", desTransporte)
+print ("\n> O desconto do transporte é R$", desTransporte)
 
-print ("O total de desconto é R$", descontos)
+print ("\n> O desconto do inss é R$", inss)
 
-print ("O salario liquido é R$", SalLiquido)
+print ("\n> O total de desconto é R$", descontos)
+
+print ("\n> O salario liquido é R$", SalLiquido)

@@ -1,5 +1,4 @@
-segundos_str = input("Por favor, entre com o numero de segundos que deseja converter: ")
-total_segs = int(segundos_str)
+total_segs = int(input("Por favor, entre com o numero de segundos que deseja converter: "))
 
 horas = total_segs // 3600
 segs_restantes = total_segs % 3600
