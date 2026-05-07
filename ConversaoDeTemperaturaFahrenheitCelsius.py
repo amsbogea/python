@@ -1,10 +1,10 @@
 while True:
     try:
-        TemperaturaFahrenheit = float(input("Digite uma temperatura em Fahrenheit: "))
+        temperatura_fahrenheit = float(input("Digite uma temperatura em Fahrenheit: "))
         break
     except ValueError:
-        print("Entrada inválida")
+        print("❌ Entrada inválida! Digite apenas números.")
 
-TeperaturaCelsius = ( float(TemperaturaFahrenheit) - 32) *5 /9
+temperatura_celsius = (temperatura_fahrenheit - 32) * 5 / 9
 
-print ("A temperatura em celsius é ", TeperaturaCelsius)
+print(f"A temperatura em celsius é {temperatura_celsius:.2f}°C")
