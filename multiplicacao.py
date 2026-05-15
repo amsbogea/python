@@ -16,4 +16,4 @@ while True:
         
 produto = multiplicando * multiplicador
 
-print (f"O resultado é = {produto}")
+print (f"O resultado da multiplicação de {multiplicando} x {multiplicador} = {produto}")

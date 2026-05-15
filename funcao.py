@@ -35,7 +35,7 @@ while True:
                     print(f'Resultado da divisão de {num1} / {num2} = {resultado}')
                 elif escolha == '5':
                     resultado = div_int(num1, num2)
-                    print(f'Resultado inteiro da divisão de {num1} // {num2} = {resultado}')
+                    print(f'Resultado inteiro da divisão de {num1} // {num2} = {resultado:.0f}')
                 elif escolha == '6':
                     resultado = resto_div(num1, num2)
                     print(f'Resto da divisão de {num1} % {num2} = {resultado}')

@@ -8,27 +8,30 @@ while True:
         print('Entrada inválida!')
 
 print('\n')
-for i in range(11):
+for i in range(1, 11):
     tabuada = numero + i
     print(f"{numero} + {i} = {tabuada}")
 
 print('\n')        
-i = 0
 
-for i in range(11):
+
+for i in range(1, 11):
     tabuada = numero - i
     print(f"{numero} - {i} = {tabuada}")
     
 print('\n')        
-i = 0
 
-for i in range(11):
+
+for i in range(1, 11):
     tabuada = numero * i
     print(f"{numero} x {i} = {tabuada}")
     
 print('\n')        
-i = 0
+
 
 for i in range(1, 11):
-    tabuada = numero // i
+    tabuada = numero // i   
+    # Interrompe o loop se o resultado da tabuada for igual a zero
+    if tabuada == 0:
+        break
     print(f"{numero} / {i} = {tabuada}")
